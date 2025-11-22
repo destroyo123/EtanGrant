@@ -1,8 +1,8 @@
 # EtanGrant
-I'll just be putting miscellaneous projects on here...?
+Welcome to my repo! Aint much yet, but will be soon...
 
 # What's on here?
-I've got some personal projects
+I'll put various projects for WREC, AIAA, Research, etc in here as they accumulate.
 ## WREC
 WREC is the Wildcat Rocket Engineering Club at the University of Arizona. <br/>
 Most of my projects are probably from this club. <br/>
