@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BNO055 3D IMU Viewer</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+  </style>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+
+let scene = new THREE.Scene();
+let camera = new THREE.PerspectiveCamera(70, window.innerWidth/window.innerHeight, 0.01, 10);
+camera.position.z = 2;
+
+let renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+// Simple cube model
+let geometry = new THREE.BoxGeometry(1,1,1);
+let material = new THREE.MeshNormalMaterial();
+let cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+
+// WebSocket to Python
+let socket = new WebSocket("ws://localhost:8765");
+
+socket.onmessage = (event) => {
+    let parts = event.data.split(",");
+    if (parts.length == 4) {
+        let w = parseFloat(parts[0]);
+        let x = parseFloat(parts[1]);
+        let y = parseFloat(parts[2]);
+        let z = parseFloat(parts[3]);
+
+        // THREE.js quaternion is (x, y, z, w)
+        cube.quaternion.set(x, y, z, w);
+    }
+};
+
+function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+}
+animate();
+
+</script>
+</body>
+</html>
