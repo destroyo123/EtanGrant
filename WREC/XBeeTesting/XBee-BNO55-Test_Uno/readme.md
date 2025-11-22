@@ -51,4 +51,5 @@ For the Arduino Uno:
 - Set the "COM5" port text to whatever the XBee module is in reality (mine is probably COM33 or COM32
 - run the Python script with the button in the top-right corner
 
+## Next?
 **Assuming things are working, that's probably it?**
