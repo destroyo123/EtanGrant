@@ -12,7 +12,9 @@
 - Unplug the Arduino Uno from the computer
 
 ## Set up the Arduino
-### Pinout (Xbee3)
+### XBee 3 (XB3) Pinout
+[XBee 3 Datasheet linked here](https://www.digi.com/resources/library/data-sheets/ds_xbee-3-zigbee-3)
+
 For the Arduino Uno:
 | XBee3 pin | Arduino Uno Pin |
 | :------ | :----------: |
@@ -21,7 +23,7 @@ For the Arduino Uno:
 | 2 (DOUT) | Tx (~8) |
 | 10 (GND) | GND (any) |
 
-### Pinout (XBee SX900 Pro)
+### XBee SX 900 (XBP9X) Pinout
 [More info on page 104 of the datasheet linked here.](https://www.digi.com/resources/library/data-sheets/ds-xbee-xbeepro-sx-modules)
 
 For the Arduino Uno:
