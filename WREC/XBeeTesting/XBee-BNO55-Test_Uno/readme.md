@@ -21,7 +21,7 @@ For the Arduino Uno:
 | 2 (DOUT) | Tx (~8) |
 | 10 (GND) | GND (any) |
 
-### Pinout (XB9X SX900)
+### Pinout (XBee SX900 Pro)
 For the Arduino Uno:
 | XBee (SX900) pin | Arduino Uno Pin |
 | :------ | :----------: |
@@ -29,6 +29,8 @@ For the Arduino Uno:
 | 4 (DIN/CONFIG) | Rx (~9) |
 | 3 (DOUT) | Tx (~8) |
 | 1 (GND) | GND (any) |
+| 25 (CTS) | idk |
+| 29 (RTS) | idk |
 
 ### Steps
 - Connect the BNO55 and XBee modules to the Uno, however (breadboard, wires, jumpers, I don't care)
