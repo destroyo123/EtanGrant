@@ -12,8 +12,27 @@
 - Unplug the Arduino Uno from the computer
 
 ## Set up the Arduino
+### Pinout (Xbee3)
+For the Arduino Uno:
+| XBee3 pin | Arduino Uno Pin |
+| :------ | :----------: |
+| 1 (Vcc) | 3v3 |
+| 3 (DIN/CONFIG) | Rx (~9) |
+| 2 (DOUT) | Tx (~8) |
+| 10 (GND) | GND (any) |
+
+### Pinout (XB9X SX900)
+For the Arduino Uno:
+| XBee (SX900) pin | Arduino Uno Pin |
+| :------ | :----------: |
+| 1 (Vcc) | 3v3 |
+| 3 (DIN/CONFIG) | Rx (~9) |
+| 2 (DOUT) | Tx (~8) |
+| 10 (GND) | GND (any) |
+
+### Steps
 - Connect the BNO55 and XBee modules to the Uno, however (breadboard, wires, jumpers, I don't care)
-- **TODO: add pinout instructions**
+  - Use the pinout from above.
 - Connect the computer-side XBee module
 - Power on the Arduino/BNO55/Xbee setup
 
