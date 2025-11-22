@@ -25,10 +25,10 @@ For the Arduino Uno:
 For the Arduino Uno:
 | XBee (SX900) pin | Arduino Uno Pin |
 | :------ | :----------: |
-| 1 (Vcc) | 3v3 |
-| 3 (DIN/CONFIG) | Rx (~9) |
-| 2 (DOUT) | Tx (~8) |
-| 10 (GND) | GND (any) |
+| 2 (Vcc) | 3v3 |
+| 4 (DIN/CONFIG) | Rx (~9) |
+| 3 (DOUT) | Tx (~8) |
+| 1 (GND) | GND (any) |
 
 ### Steps
 - Connect the BNO55 and XBee modules to the Uno, however (breadboard, wires, jumpers, I don't care)
