@@ -11,8 +11,8 @@
 - Click the -> button to the right of the build button to upload it to the Arduino Uno
 - Unplug the Arduino Uno from the computer
 
-## Set up the Arduino
-### XBee 3 (XB3) Pinout
+### Set up the Arduino
+#### XBee 3 (XB3) Pinout
 [XBee 3 Datasheet linked here](https://www.digi.com/resources/library/data-sheets/ds_xbee-3-zigbee-3)
 
 For the Arduino Uno:
@@ -23,7 +23,7 @@ For the Arduino Uno:
 | 2 (DOUT) | Tx (~8) |
 | 10 (GND) | GND (any) |
 
-### XBee SX 900 (XBP9X) Pinout
+#### XBee SX 900 (XBP9X) Pinout
 [More info on page 104 of the datasheet linked here.](https://www.digi.com/resources/library/data-sheets/ds-xbee-xbeepro-sx-modules)
 
 For the Arduino Uno:
@@ -36,13 +36,13 @@ For the Arduino Uno:
 | 25 (CTS) | idk |
 | 29 (RTS) | idk |
 
-### Steps
+#### Steps
 - Connect the BNO55 and XBee modules to the Uno, however (breadboard, wires, jumpers, I don't care)
   - Use the pinout from above.
 - Connect the computer-side XBee module
 - Power on the Arduino/BNO55/Xbee setup
 
-## Set up the Computer-side software
+### Set up the Computer-side software
 - In the "test" subfolder, check that there are these two files:
   - imu_viewer.html
   - serial_ws_bridge.py
