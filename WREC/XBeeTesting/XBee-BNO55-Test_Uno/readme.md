@@ -23,6 +23,7 @@ For the Arduino Uno:
 
 ### Pinout (XBee SX900 Pro)
 [More info on page 104 of the datasheet linked here.](https://www.digi.com/resources/library/data-sheets/ds-xbee-xbeepro-sx-modules)
+
 For the Arduino Uno:
 | XBee (SX900) pin | Arduino Uno Pin |
 | :------ | :----------: |
