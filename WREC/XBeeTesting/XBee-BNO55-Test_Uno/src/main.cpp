@@ -6,7 +6,7 @@
 Adafruit_BNO055 bno = Adafruit_BNO055(55);
 
 void setup() {
-  Serial.begin(115200);   // Goes to XBee UART in transparent mode
+  Serial.begin(9600);   // Goes to XBee UART in transparent mode
   Wire.begin();
 
   if (!bno.begin()) {
@@ -27,3 +27,4 @@ void loop() {
 
   delay(20); // ~50 Hz
 }
+
