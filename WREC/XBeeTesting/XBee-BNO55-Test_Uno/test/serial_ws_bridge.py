@@ -2,8 +2,8 @@ import asyncio
 import serial
 import websockets
 
-SERIAL_PORT = "COM5"       # Change this to your XBee port
-BAUD = 115200
+SERIAL_PORT = "COM28"       # Change this to your XBee port
+BAUD = 9600
 
 ser = serial.Serial(SERIAL_PORT, BAUD, timeout=0.1)
 
@@ -20,3 +20,4 @@ async def main():
         await asyncio.Future()  # run forever
 
 asyncio.run(main())
+
