@@ -19,8 +19,8 @@ For the Arduino Uno:
 | XBee3 pin | Arduino Uno Pin |
 | :------ | :----------: |
 | 1 (Vcc) | 3v3 |
-| 3 (DIN/CONFIG) | Rx (~9) |
-| 2 (DOUT) | Tx (~8) |
+| 3 (DIN/CONFIG) | Rx (0) |
+| 2 (DOUT) | Tx (1) |
 | 10 (GND) | GND (any) |
 
 #### XBee SX 900 (XBP9X) Pinout
@@ -30,8 +30,8 @@ For the Arduino Uno:
 | XBee (SX900) pin | Arduino Uno Pin |
 | :------ | :----------: |
 | 2 (Vcc) | 3v3 |
-| 4 (DIN/CONFIG) | Rx (~9) |
-| 3 (DOUT) | Tx (~8) |
+| 4 (DIN/CONFIG) | Rx (0) |
+| 3 (DOUT) | Tx (1) |
 | 1 (GND) | GND (any) |
 | 25 (CTS) | idk |
 | 29 (RTS) | idk |
